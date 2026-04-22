@@ -1,13 +1,13 @@
 {% set name = "napari-arboretum" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-arboretum-{{ version }}.tar.gz
-  sha256: 9b1837bb02727edd045b7a341af29bd466aef3ae01bbc81141c71117cd5b6078
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: eec5979f32881cdd7ec8205b8d895918a5e64ddb020a9eb2745381785d6b4df2
 
 build:
   noarch: python
